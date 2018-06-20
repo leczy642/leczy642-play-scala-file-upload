@@ -3,7 +3,7 @@ A file upload script developed using playscala 2.6.x
 
 A play project the illustrates how to carry out file upload in play(Scala) framework
 
-Full tutorial for this application can be found at  
+Full tutorial for this application can be found at https://steemit.com/utopian-io/@leczy/creating-a-file-upload-system-with-play-2-6-x-scala-part-1-multipart-form-data
 
 Open command prompt
 
