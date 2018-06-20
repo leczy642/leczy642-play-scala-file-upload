@@ -1,0 +1,27 @@
+@(form: Form[controllers.UploadForm])(implicit messages: Messages)
+
+@**
+Defining form actions in views
+setting form multipart/form-data enctype
+setting POST and GET Methods for file upload forms in routes
+Rendering an upload form using controller actions
+File upload using multipart/form-data encoding
+**@
+
+@main("Welcome to Play") {
+    @helper.form(action = routes.FileUploadController.uploader, 'enctype -> "multipart/form-data") {
+        @helper.inputFile(form("file"))
+        <input type="submit" value="upload"/>
+    }
+}
+
+@*in displaying our form, we begin by setting the form action to
+routes.FileUploadController.uploader, which is the routes that processes the
+upload request
+
+WE define a helper for a form input type, which is giving the name, file
+
+Finally our submit button is defined using HTML syntax, and the value of the button
+* is set to upload
+*
+*@
